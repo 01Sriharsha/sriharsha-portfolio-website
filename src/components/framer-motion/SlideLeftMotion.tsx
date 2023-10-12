@@ -21,7 +21,6 @@ export default function SlideLeftMotion({
         transition: { duration: 1, type: "spring", delay: 0.06 * index! },
       }}
       viewport={{ once: true }}
-      className="overflow-hidden"
     >
       {children}
     </motion.div>

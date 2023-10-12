@@ -9,7 +9,7 @@ import AutoReplyEmailTemplate from "@/email/AutoReplyEmailTemplate";
 
 export default async function Home() {
   return (
-    <main className="max-w-screen-md m-auto pb-5 px-4">
+    <main className="max-w-screen-md m-auto pb-5 px-3">
       <IntroSection />
       <SectionDivider />
 
