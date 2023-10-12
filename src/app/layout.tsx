@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-theme w-full pt-28 min-h-screen relative overflow-x-hidden`}
+        className={`${inter.className} bg-theme w-full pt-28 min-h-screen relative`}
       >
         <ActiveSectionprovider>
           <ThemeChanger />

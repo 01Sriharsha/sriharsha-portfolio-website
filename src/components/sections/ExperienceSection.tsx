@@ -7,7 +7,7 @@ import SlideLeftMotion from "../framer-motion/SlideLeftMotion";
 
 export default async function ExperienceSection() {
   return (
-    <section id="experience" className="w-full scroll-mt-24 px-3 md:px-5">
+    <section id="experience" className="w-full scroll-mt-24 px-3 md:px-5 overflow-x-hidden">
       <SectionHeading>My Experience</SectionHeading>
 
       <div className="relative border-l border-gray-700">
