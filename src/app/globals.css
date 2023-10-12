@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+html {
+    scroll-behavior: smooth !important;
+}
+
+.bg-theme {
+    @apply bg-gradient-to-r from-rose-100 to-teal-100 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-950
+}
+
+
+
+.project-card:hover>.img-container {
+    @apply -rotate-3 scale-105 transition ease-in-out duration-300 translate-y-2 opacity-80
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #e5e7eb;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(34, 38, 54);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #546579;
+}
