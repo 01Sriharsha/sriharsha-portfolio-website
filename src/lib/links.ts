@@ -3,6 +3,7 @@ export const CV_LINK =
 export const GITHUB_LINK = "https://github.com/01Sriharsha";
 export const LINKEDIN_LINK =
   "https://www.linkedin.com/in/k-sriharsha-726002250/";
+export const DOMAIN = "https://sriharsha.vercel.app/";
 
 export const routes = [
   {

@@ -1,3 +1,4 @@
+import { DOMAIN } from "@/lib/links";
 import {
   Html,
   Body,
@@ -62,9 +63,9 @@ export default function AutoReplyEmailTemplate({
               <Section className="text-base font-medium">
                 <Text className="font-semibold">Best regards,</Text>
                 <Text>K Sriharsha</Text>
-                <Link href={process.env.DOMAIN} className="text-sm underline">
+                <a target="_blank" href={DOMAIN} className="text-sm underline">
                   Visit Sriharsha's Portfolio
-                </Link>
+                </a>
               </Section>
               <Hr />
               <Text className="text-xs text-gray-700 mt-3">

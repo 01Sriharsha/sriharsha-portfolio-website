@@ -42,6 +42,6 @@ To accommodate user preferences, I implemented a dark and light theme toggle, al
 
 ## Deployment
 
-The website is deployed on [Vercel](https://vercel.com/), ensuring public availability and scalability. You can check out the live version of my portfolio website [here](https://your-portfolio-website-url.com/).
+The website is deployed on [Vercel](https://vercel.com/), ensuring public availability and scalability. You can check out the live version of my portfolio website [here]("https://sriharsha.vercel.app/).
 
 This portfolio website showcases my skills, projects, and experiences while incorporating modern technologies and practices to provide a smooth and engaging user experience. It also facilitates easy communication with me through the contact form.
