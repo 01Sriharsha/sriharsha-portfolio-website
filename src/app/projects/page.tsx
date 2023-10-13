@@ -12,6 +12,10 @@ export default async function ProjectsPage({
 }) {
   const { company } = searchParams;
 
+  const Projects = company
+    ? projectsData.filter((project) => project.company === company)
+    : projectsData;
+
   return (
     <section className="w-full scoll-mt-24">
       <div className="w-full relative pt-2 pb-0">
@@ -24,10 +28,12 @@ export default async function ProjectsPage({
 
       {company && (
         <div className="flex justify-between items-center gap-3 dark:text-gray-300 pb-2 text-gray-800">
-          <h3 className="text-base">
-            Projects I've worked on at {company}
-          </h3>
-          <Link href="/projects" replace className="rounded-md bg-gray-200 text-gray-800 py-1 px-2">
+          <h3 className="text-base">Projects I've worked on at {company}</h3>
+          <Link
+            href="/projects"
+            replace
+            className="rounded-md bg-gray-200 text-gray-800 py-1 px-2"
+          >
             All projects
           </Link>
         </div>
@@ -35,11 +41,9 @@ export default async function ProjectsPage({
 
       <hr className="border-b border-b-gray-500" />
       <>
-        {projectsData
-          .filter((project) => project.company === company)
-          .map((project) => (
-            <ProjectCard key={project.title} {...project} />
-          ))}
+        {Projects.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
       </>
     </section>
   );
