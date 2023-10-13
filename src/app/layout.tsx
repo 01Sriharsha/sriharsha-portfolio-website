@@ -23,11 +23,11 @@ export default function RootLayout({
         className={`${inter.className} bg-theme w-full pt-28 min-h-screen relative`}
       >
         <ActiveSectionprovider>
-          <ThemeChanger />
           <Appbar />
-          {children}
+          <main className="max-w-screen-md m-auto pb-5 px-3">{children}</main>
           <Footer />
         </ActiveSectionprovider>
+        <ThemeChanger />
       </body>
     </html>
   );
