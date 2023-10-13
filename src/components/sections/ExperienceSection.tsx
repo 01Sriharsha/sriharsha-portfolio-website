@@ -4,6 +4,8 @@ import SectionHeading from "../layout/SectionHeading";
 import Collapse from "../sub-components/Collapse";
 import { RxThickArrowRight } from "react-icons/rx";
 import SlideLeftMotion from "../framer-motion/SlideLeftMotion";
+import Link from "next/link";
+import { FiExternalLink } from "react-icons/fi";
 
 export default async function ExperienceSection() {
   return (
@@ -31,10 +33,20 @@ export default async function ExperienceSection() {
                       {data.duration}
                     </time>
                   </div>
-                  <p className="text-gray-800 dark:text-gray-200 font-medium flex gap-1 items-center text-sm">
-                    <RxThickArrowRight />
-                    <span>{data.type}</span>
-                  </p>
+                  <div className="flex justify-start gap-2 items-center">
+                    <p className="text-gray-800 dark:text-gray-200 font-medium flex gap-1 items-center text-sm">
+                      <RxThickArrowRight />
+                      <span>{data.type}</span>
+                    </p>
+                    {data.projects && (
+                      <Link
+                        href={`/projects?company=${data.company}`}
+                        className="text-xs bg-gray-800 dark:bg-gray-700 text-gray-300 py-1 px-3 flex gap-1 items-center rounded-full"
+                      >
+                        View Projects <FiExternalLink />
+                      </Link>
+                    )}
+                  </div>
                   <ul className="space-y-2 ms-4 hidden md:block">
                     {data.description.map((desc, i) => (
                       <li
@@ -65,7 +77,7 @@ export default async function ExperienceSection() {
                       {data.techstack.map((tech) => (
                         <li
                           key={tech}
-                          className="text-gray-800 dark:bg-gray-600 dark:text-gray-300 px-2 py-1 rounded-full text-sm border border-gray-900 font-medium hover:bg-gray-800 hover:text-gray-200 transition duration-300 ease-in-out"
+                          className=" dark:bg-gray-600 px-2 py-1 rounded-full text-sm border border-gray-900 font-medium bg-gray-800 text-gray-300 transition duration-300 ease-in-out"
                         >
                           {tech}
                         </li>

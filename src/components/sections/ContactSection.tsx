@@ -5,8 +5,9 @@ import SectionHeading from "@/components/layout/SectionHeading";
 import Link from "next/link";
 import { sendEmail } from "@/actions/SendEmail";
 import toast from "react-hot-toast";
-import EmailSubmitBtn from "../sub-components/EmailSubmitBtn";
+import EmailSubmitBtn from "@/components/sub-components/EmailSubmitBtn";
 import SlideYMotion from "@/components/framer-motion/SlideYMotion";
+import { MAIL_ID } from "@/lib/links";
 
 export default function ContactSection() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -16,8 +17,8 @@ export default function ContactSection() {
         <SectionHeading>Contact Me</SectionHeading>
         <p className="my-2 text-gray-900 dark:text-gray-400 text-center">
           Please contact me directly at{" "}
-          <Link href="mailto:harshavasu463@gmail.com" className="underline ">
-            harshavasu463@gmail.com
+          <Link href={`mailto:${MAIL_ID}`} className="underline">
+            {MAIL_ID}
           </Link>{" "}
           or through this form.
         </p>

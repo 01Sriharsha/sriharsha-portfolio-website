@@ -15,7 +15,7 @@ export default async function AboutSection() {
           </li>
           <li>
             I've completed my <span> High School(SSLC) </span>from
-            <span> Jyothi High School in 2018 </span>
+            <span> Jyothi High School, Mysore </span>
             with an aggregate of <span>89.28%.</span>
           </li>
           <li>

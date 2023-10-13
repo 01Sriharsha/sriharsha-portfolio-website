@@ -2,9 +2,16 @@ import SectionHeading from "@/components/layout/SectionHeading";
 import BackButton from "@/components/sub-components/BackButton";
 import ProjectCard from "@/components/sub-components/ProjectCard";
 import { projectsData } from "@/lib/data";
+import Link from "next/link";
 import React from "react";
 
-export default async function ProjectsPage() {
+export default async function ProjectsPage({
+  searchParams,
+}: {
+  searchParams: { [key: string]: string };
+}) {
+  const { company } = searchParams;
+
   return (
     <section className="w-full scoll-mt-24">
       <div className="w-full relative pt-2 pb-0">
@@ -14,10 +21,25 @@ export default async function ProjectsPage() {
 
         <SectionHeading>My Projects</SectionHeading>
       </div>
+
+      {company && (
+        <div className="flex justify-between items-center gap-3 dark:text-gray-300 pb-2 text-gray-800">
+          <h3 className="text-base">
+            Projects I've worked on at {company}
+          </h3>
+          <Link href="/projects" replace className="rounded-md bg-gray-200 text-gray-800 py-1 px-2">
+            All projects
+          </Link>
+        </div>
+      )}
+
+      <hr className="border-b border-b-gray-500" />
       <>
-        {projectsData.map((project) => (
-          <ProjectCard key={project.title} {...project} />
-        ))}
+        {projectsData
+          .filter((project) => project.company === company)
+          .map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
       </>
     </section>
   );

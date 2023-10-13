@@ -212,6 +212,7 @@ export const experienceData = [
       "Hibernate",
       "MySQL",
     ],
+    projects : true
   },
   {
     title: "NoSQL and MongoDB Resource Person",
