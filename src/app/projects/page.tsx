@@ -17,7 +17,7 @@ export default async function ProjectsPage({
     : projectsData;
 
   return (
-    <section className="w-full scoll-mt-24">
+    <section className="w-full  scroll-mt-32">
       <div className="w-full relative pt-2 pb-0">
         <div className="absolute left-0 mt-1">
           <BackButton />
