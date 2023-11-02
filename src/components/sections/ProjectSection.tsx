@@ -17,6 +17,7 @@ export default async function ProjectSection() {
         <Link
           href={"/projects"}
           className="text-gray-300 bg-gray-800 dark:bg-gray-700 px-4 py-2 rounded-full"
+          scroll
         >
           More Projects
         </Link>

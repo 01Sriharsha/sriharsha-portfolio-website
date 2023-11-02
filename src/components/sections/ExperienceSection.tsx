@@ -42,6 +42,7 @@ export default async function ExperienceSection() {
                       <Link
                         href={`/projects?company=${data.company}`}
                         className="text-xs bg-gray-800 dark:bg-gray-700 text-gray-300 py-1 px-3 flex gap-1 items-center rounded-full"
+                        scroll
                       >
                         View Projects <FiExternalLink />
                       </Link>
