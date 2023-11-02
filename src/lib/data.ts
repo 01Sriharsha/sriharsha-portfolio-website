@@ -6,11 +6,29 @@ import CsmsPic from "@/assets/csms thumbnail.png";
 import GovtSchemesPic from "@/assets/govtschemes thumbnail.png";
 import TextutilsPic from "@/assets/textutils thumbnail.png";
 import KeeperappPic from "@/assets/keeper thumbnail.png";
+import CpcSportsPic from "@/assets/cpc thumbnail.png";
 import JarvisPic from "@/assets/jarvis thumbnail.png";
 import { CgWorkAlt } from "react-icons/cg";
 import { GrWorkshop } from "react-icons/gr";
 
 export const projectsData = [
+  {
+    title: "CPC Sports Meet",
+    descrption:
+      " Developed a full stack comprehensive sports management web application for Government CPC Polytechnic, Mysuru, to facilitate the organization and coordination of the State Level Inter Polytechnic Sports Meets. The application was a proud initiative to give back to the institute where I completed my Diploma in Computer Science.",
+    image: CpcSportsPic,
+    github: "https://github.com/01Sriharsha/cpc-project",
+    website: "https://cpcsportsmeet.vercel.app/",
+    technologies: [
+      "Next.Js 13",
+      "React.Js",
+      "Prisma",
+      "Tailwind CSS",
+      "MySQL - AWS RDS",
+      "TypeScript",
+      "Vercel Cloud",
+    ],
+  },
   {
     title: "Reservease",
     descrption:
