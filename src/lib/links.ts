@@ -1,5 +1,6 @@
 export const CV_LINK =
   "https://drive.google.com/file/d/1ar7BrM_-zpcEQr4fFrVLxLfWHxsnixZl/view?usp=sharing";
+export const GITHUB_LINK = "https://github.com/01Sriharsha";
 export const LINKEDIN_LINK =
   "https://www.linkedin.com/in/k-sriharsha-726002250/";
 export const DOMAIN = "https://sriharsha.vercel.app/";

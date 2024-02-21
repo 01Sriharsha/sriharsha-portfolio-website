@@ -47,10 +47,11 @@ export const sendEmail = async (formData: FormData) => {
     if (data.id) {
       await replyEmail(parsedEmail, username);
     } else {
-      console.log({data});
+      console.log({ data });
       throw new Error("Something went wrong!!Try again later!");
     }
   } catch (error: unknown) {
+    console.log({ error });
     return {
       error:
         (error instanceof Error && error.message) ||
