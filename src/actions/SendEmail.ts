@@ -14,7 +14,7 @@ const Schema = z.object({
   message: z.string().min(1, "Message Cannot be empty!!"),
 });
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY!);
 
 export const sendEmail = async (formData: FormData) => {
   const message = formData.get("message");
@@ -47,7 +47,7 @@ export const sendEmail = async (formData: FormData) => {
     if (data.id) {
       await replyEmail(parsedEmail, username);
     } else {
-      console.log("data", data);
+      console.log({data});
       throw new Error("Something went wrong!!Try again later!");
     }
   } catch (error: unknown) {
