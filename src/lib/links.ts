@@ -1,5 +1,5 @@
 export const CV_LINK =
-  "https://drive.google.com/file/d/1ar7BrM_-zpcEQr4fFrVLxLfWHxsnixZl/view?usp=sharing";
+  "https://drive.google.com/file/d/1A_OC0s4dNfquh6Lcv135iYZbQoQwtohA/view?usp=drive_link";
 export const GITHUB_LINK = "https://github.com/01Sriharsha";
 export const LINKEDIN_LINK =
   "https://www.linkedin.com/in/k-sriharsha-726002250/";
